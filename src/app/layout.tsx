@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Link from "next/link";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +28,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-800`}
       >
+         <header className="header-of">
+        <Navbar/>
+      </header>
         {children}
+        <footer className="bg-gray-800 text-white py-4">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="flex space-x-6">
+          <Link href="/" className="hover:text-gray-300">
+            Support
+          </Link>
+          <Link href="/" className="hover:text-gray-300">
+            Privacy Policy
+          </Link>
+          <Link href="/" className="hover:text-gray-300">
+            Terms and Conditions
+          </Link>
+        </div>
+        <div className="text-center md:text-right text-sm">
+          © 2020 Enver, All Rights Reserved
+        </div>
+      </div>
+    </footer>
       </body>
     </html>
   );
