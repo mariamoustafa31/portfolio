@@ -55,7 +55,7 @@ hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-custom-cream trans
     <Image 
         src="/imgs/Frame 3.png" 
         alt="An example image"
-        className=' mt-28 hover:scale-110 transition-transform duration-300 mr-12'
+        className=' mt-28 hover:scale-110 transition-transform duration-300 mr-12 hidden sm:block'
         width={400} 
         height={250} 
       />

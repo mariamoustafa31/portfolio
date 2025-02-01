@@ -15,12 +15,12 @@ const Contact1 = () => {
 
   return (
     <section className="">
-          <div className="justify-between items-center flex bg-slate-900 ">
-    <div className="ml-20  space-y-4">
+          <div className=" justify-between items-center md:flex-nowrap flex-wrap  flex bg-slate-900 ">
+    <div className="ml-16  space-y-4">
       <div>
-        <h1 className=" text-white mt-24 mb-24 text-[55px] font-semibold ">
+        <h1 className=" text-white mt-24 mb-24 text-[25px] lg:text-[50px]  font-semibold ">
         Contact us for the service <br/> you want to use
-          <span className=" text-custom-cream text-[30px] font-serif italic ">
+          <span className=" text-custom-cream text-[30px]   font-serif italic ">
           </span>
         </h1>
       </div>
@@ -28,7 +28,7 @@ const Contact1 = () => {
     <div>
     <button
     onClick={handleClick}
-  className="px-8 py-4 mr-44 bg-custom-p text-white text-2xl font-semibold rounded-lg shadow-md font-sans
+  className="px-8 py-4 mr-44  ml-44 flex mb-8  bg-custom-p text-white text-xl font-semibold rounded-lg shadow-md font-sans
    hover:bg-slate-400 focus:outline-none focus:ring-2 focus:ring-custom-cream transition duration-300"
 >
   Contact us 
